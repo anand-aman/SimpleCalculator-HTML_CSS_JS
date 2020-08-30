@@ -8,8 +8,6 @@ var positive = true;
 
 document.getElementById("calc-display").innerHTML = display;
 
-// var digits = document.getElementsByClassName("digit");
-
 function digit(num){
 	if(display == 'Error')
 		display="";
@@ -95,4 +93,37 @@ function percentage(){
 	}
 	operator = "percent";
 	document.getElementById("calc-display").innerHTML = display;
+}
+
+// Handling Keyboard Event
+
+document.addEventListener("keypress", keyDownTextField, false);
+
+function keyDownTextField(e) {
+  var keyCode = e.keyCode;
+  if(keyCode>=48 && keyCode<=57){
+  		digit(keyCode-48);
+  }
+  else if(keyCode==61 || keyCode==13){
+  	calculate();
+  }
+  else if(keyCode==46){
+  	digit('.');
+  }
+  else if(keyCode==42){
+  	operation('multiply');
+  }
+  else if(keyCode==47){
+  	operation('divide');
+  }
+  else if(keyCode==45){
+  	operation('subtract');
+  }
+  else if(keyCode==43){
+  	operation('add')
+  }
+  else if(keyCode==37){
+  	percentage();
+  }
+
 }
