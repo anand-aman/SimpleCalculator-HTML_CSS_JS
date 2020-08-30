@@ -1,3 +1,7 @@
+html{
+	font-size: 2vh;
+}
+
 body{
 	height: 97vh;
 	display: flex;
@@ -6,11 +10,13 @@ body{
 }
 
 #calculator{
-	height: 75vh;
-	width: 25vw;
+	height: 40rem;
+	width: 25rem;
 	border: 8px solid lightgrey;
 	min-height: 250px;
 	min-width: 125px;
+	max-height: 80vh;
+	max-width: 80vw;
 }
 
 #display{
