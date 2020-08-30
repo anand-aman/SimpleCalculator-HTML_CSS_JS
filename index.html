@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div id="calculator">
+		<div id="display">
+			<span id="calc-display"></span>
+		</div>
+
+		<div id="button-container">
+
+			<div class="button operator" onclick="clean()">
+				<span>AC</span>
+			</div>
+
+			<div class="button operator" onclick="togglePositive()">
+				<span>+/-</span>
+			</div>
+
+			<div class="button operator" onclick="percentage()">
+				<span>%</span>
+			</div>
+
+			<div class="button operator" onclick="operation('divide')">
+				<span>/</span>
+			</div>
+
+			<div class="button" onclick="digit(7)">
+				<span>7</span>
+			</div>
+
+			<div class="button" onclick="digit(8)">
+				<span>8</span>
+			</div>
+
+			<div class="button" onclick="digit(9)">
+				<span>9</span>
+			</div>
+
+			<div class="button operator" onclick="operation('multiply')">
+				<span>*</span>
+			</div>
+
+			<div class="button" onclick="digit(4)">
+				<span>4</span>
+			</div>
+
+			<div class="button" onclick="digit(5)">
+				<span>5</span>
+			</div>
+
+			<div class="button" onclick="digit(6)">
+				<span>6</span>
+			</div>
+
+			<div class="button operator" onclick="operation('subtract')">
+				<span>-</span>
+			</div>
+
+			<div class="button"  onclick="digit(1)">
+				<span>1</span>
+			</div>
+
+			<div class="button" onclick="digit(2)">
+				<span>2</span>
+			</div>
+
+			<div class="button" onclick="digit(3)">
+				<span>3</span>
+			</div>
+
+			<div class="button operator" onclick="operation('add')">
+				<span>+</span>
+			</div>
+
+			<div class="button" onclick="digit(0)" style="width: 50%">
+				<span>0</span>
+			</div>
+
+			<div class="button" onclick="digit('.')">
+				<span>.</span>
+			</div>
+
+			<div class="button operator" onclick="calculate()" style="background-color: tomato">
+				<span>=</span>
+			</div>
+
+		</div>
+	</div>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
